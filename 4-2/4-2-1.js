@@ -7,5 +7,5 @@ var defaultTheme = {
 function toNumber(value) {
     return value;
 }
-var fiction = toNumber('1000');
-fiction.toFixed();
+var fiction = toNumber('1000'); // NoError
+fiction.toFixed(); // RunTime Error!  (anyにアップキャストした上でnumberにダウンキャストしているため)
