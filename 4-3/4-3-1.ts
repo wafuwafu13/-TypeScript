@@ -1,17 +1,18 @@
-type User4 = { gender: string }
-type UserC = User4 & { name: string }
-type UserD = User4 & { age: number, graduate: string }
-
-function judgeUserType(user: UserC | UserD) {
-    if ('gender' in user) {
-        const u0 = user
-        console.log('user type is UserC | userD')
+function reset(value: number | string | boolean) {
+    const v0 = value // string | number | boolean
+    if (typeof value == 'number') {
+        const v1 = value // number
+        return 0
     }
-    if ('name' in user) {
-        const u1 = user
-        console.log('user type is UserC')
-        return
+    const v2 = value // string || boolean
+    if (typeof value == 'string') {
+        const v3 = value // strig
+        return ''
     }
-    const u2 = user
-    console.log('user type is UserD')
+    const v4 = value
+    return false
 }
+
+console.log(reset(1))
+console.log(reset('1'))
+console.log(reset(true))
