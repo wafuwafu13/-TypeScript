@@ -39,15 +39,15 @@ var userA = {
     name: 'Taro',
     age: 26
 };
-var user = {
+var userB = {
     name: 'Taro',
-    enqueue: {
+    enquete: {
         exercise_habits: 'entirely',
         time_of_sleeping: 'few'
     }
 };
-var x = userB.enqueue['exercise_habits'];
-var y = userB.enqueue['steps_per_day']; // Error
+var x = userB.enquete['exercise_habits'];
+var y = userB.enquete['steps_per_day']; // Error
 var returnPromises = {
     name: 'Taro',
     walk: function () { },
