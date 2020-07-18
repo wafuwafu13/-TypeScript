@@ -15,6 +15,8 @@ type User3 = {
     enquete: { [K in Question]?: Answer }
 }
 
+// compilerOptions.noImplicityAny が true
+
 const userB: User3 = {
     name: 'Taro',
     enquete: {
